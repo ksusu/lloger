@@ -1,1 +1,2 @@
 1)CMI : http://robdodson.me/how-to-run-a-node-script-from-the-command-line/
+2)CMI : https://developer.atlassian.com/blog/2015/11/scripting-with-node/

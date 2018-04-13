@@ -7,11 +7,23 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "llogger", "lloger"
+    "llogger",
+    "lloger"
   ],
   "author": "holywater",
   "license": "ISC",
   "bin": {
-    "llogger": "index.js"
-  }
+    "llogger": "./index.js"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ksusu/llogger.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ksusu/llogger/issues"
+  },
+  "homepage": "https://github.com/ksusu/llogger#readme"
 }
