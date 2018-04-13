@@ -1,5 +1,12 @@
 var http = require('http');
 var url = require('url');
+var mysql = require('mysql');
+
+var client = mysql.createConnection({
+	user : 'root',
+	password : '7748'
+});
+
 var index = 1;
 //var process = require('process');
 
@@ -21,6 +28,18 @@ var server = http.createServer(function(req, res){
 		console.log('ID : ' + username + '/ PW : ' + password);
 		console.log('url : ' + req.url);
 		console.log('query : ' + url.parse(req.url, true).query);
+		if (req.url == '/register') {
+			client.query('INSERT INTO Users (username, password) VALUES (?, ?)', [
+				username, password
+			], function () {
+			})
+		} else if (req.url == '/deregister') {
+			client.query('SELECT password From Users WHERE id = ?', [
+				username
+			], function (error, result) {
+			})
+		}
+
 		console.log('Server Running at http://127.0.0.1:8080');
 	}
 	res.end();
