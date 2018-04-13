@@ -18,7 +18,7 @@ var save_path = 'llogger.txt';
 // Program section
 
 //requesting phase
-//functions.check_Command();
+functions.check_Command(COMMAND, COM_ARGS);
 
 var options = functions.classify_Command(hosturl, COMMAND, COM_ARGS);
 
