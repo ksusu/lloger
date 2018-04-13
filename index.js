@@ -4,7 +4,7 @@
 var http = require('http');
 var fs = require('fs');
 var process = require('process');
-var functions = require('./lib/functions.js');
+var functions = require('./lib/functions_test.js');
 const { URL } = require('url');
 
 var COMMAND = process.argv[2] // Command is argv 2 of process.argv
@@ -12,7 +12,7 @@ var COM_ARGS = process.argv.slice(3); // Command argumnet are start from argv 3
 var hosturl = new URL('http://127.0.0.1:8080');
 var cpath = "/";
 
-var save_path = 'lloger.txt';
+var save_path = 'llogger.txt';
 
 /***********************************************************************************/
 // Program section
