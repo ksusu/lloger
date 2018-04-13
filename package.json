@@ -1,17 +1,17 @@
 {
-  "name": "lloger",
+  "name": "llogger",
   "version": "1.0.0",
-  "description": "Logging everyday life of users Jenogho_is_god",
-  "main": "lloger_server.js",
+  "description": "Logging everyday life of users & Jenogho_is_god",
+  "main": "llogger_server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "lloger"
+    "llogger", "lloger"
   ],
   "author": "holywater",
   "license": "ISC",
   "bin": {
-    "lloger": "index.js"
+    "llogger": "index.js"
   }
 }
