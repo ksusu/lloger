@@ -1,0 +1,17 @@
+{
+  "name": "lloger",
+  "version": "1.0.0",
+  "description": "Logging everyday life of users Jenogho_is_god",
+  "main": "lloger_server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lloger"
+  ],
+  "author": "holywater",
+  "license": "ISC",
+  "bin": {
+    "lloger": "index.js"
+  }
+}
