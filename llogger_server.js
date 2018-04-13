@@ -5,12 +5,17 @@ var index = 1;
 
 var server = http.createServer(function(req, res){
 	if (req.method == 'POST') {
-		var header=req.headers['authorization']||'',        // get the header
-      token=header.split(/\s+/).pop()||'',            // and the encoded auth token
-      auth=new Buffer(token, 'base64').toString(),    // convert from base64
-      parts=auth.split(/:/),                          // split on colon
-      username=parts[0],
-      password=parts[1];
+		
+		var header = req.headers['authorization'];        // get the header
+		console.log("Authorization Header is: ", header);
+
+  		var token = header.split(' ');
+  		            // and the encoded auth token
+     	var buf = new Buffer(token[1], 'base64').toString();    // convert from base64
+      	var parts = buf.split(':');                          // split on colon
+
+      	var username = parts[0];
+      	var password = parts[1];
 		/*console.log(index++ + " : POST");
 		haeder = req.headers['authorization'];
 		token = header.split(/\s+/).pop();
